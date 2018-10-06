@@ -1,11 +1,76 @@
+html{
+  height:100%
+}
 body{
+  height:100%;
   background-image: url("../Images/background.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
 }
-
 h1{
   font-family: 'Charmonman', cursive;
   font-size: 30px;
   padding: 15px;
+}
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: rgba(0, 0, 0,  0);
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+  font-size: large;
+}
+
+.left:hover {
+  left: 0;
+  background-color: rgba(0, 0, 0,  0.5);
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+  font-size: large;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgba(0, 0, 0,  0);
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+  font-size: large;
+}
+.right:hover{
+  right: 0;
+  background-color: rgba(0, 0, 0,  0.5);
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+  font-size: large;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
 }
