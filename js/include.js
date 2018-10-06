@@ -147,3 +147,17 @@ function w3Http(target, readyfunc, xml, method) {
         httpObj.send(xml);
     }
 }
+function setLogin(input){
+    localStorage.setItem("loginType", input);
+    if(input == "guests"){
+        location.href='html/gifts/guests/guest_verification.html'
+    }
+    else if(input == "couple"){
+        location.href='html/gifts/main.html'
+    }
+
+}
+
+function getLogin(){
+    return localStorage.getItem("loginType");
+}
