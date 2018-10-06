@@ -1,0 +1,11 @@
+body{
+  background-image: url("../Images/background.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+h1{
+  font-family: 'Charmonman', cursive;
+  font-size: 30px;
+  padding: 15px;
+}
