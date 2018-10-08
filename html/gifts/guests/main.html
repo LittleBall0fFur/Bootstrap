@@ -2,13 +2,13 @@
 <meta charset="utf-8"/>
 <html lang="en">
 
-<div include-html="../head.html"></div>
+<div include-html="../../head.html"></div>
 
     <body>
         <h1 class="text-center">Gifts</h1>
 
-        <div class="card mx-auto" style="width: 30rem; background-color:rgb(252, 237, 255);">
-            <img class="card-img-top mx-auto" src="../../Images/gift.jpg" alt="Img of gift" style="width: 30%;">
+        <div class="card mx-auto" style="width: 80%; background-color:rgb(252, 237, 255);">
+            <img class="card-img-top mx-auto" src="../../../Images/gift.jpg" alt="Img of gift" style="width: 30%;">
 
             <div class="card-body">
                 <h5 class="card-title">
@@ -21,17 +21,16 @@
                     Price
                 </h5>
 
-                <a href="#" class="btn btn-primary btn-dark" style="float: right; width:30%;">
-                    Buy
+                <a href="info.html" class="btn btn-primary btn-light" style="float: right; width:100%;">
+                    <p>More Info</p>
                 </a>
-
             </div>
         </div>
     </body>
 
-    <script src="../../js/include.js"></script>
-    <script>
-        includeHTML(getLogin(), "/main.html");
-    </script>
+    <script src="../../../js/include.js"></script>
+        <script>
+            includeHTML();
+        </script>
 
 </html>
