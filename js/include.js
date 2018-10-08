@@ -153,7 +153,7 @@ function setLogin(input){
         location.href='html/gifts/guests/guest_verification.html'
     }
     else if(input == "couple"){
-        location.href='html/gifts/main.html'
+        location.href='html/gifts/admin/admin_verification.html'
     }
 
 }
